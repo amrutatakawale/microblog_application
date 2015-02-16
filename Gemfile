@@ -10,12 +10,16 @@ gem 'therubyracer'
 
 group :development do 
   gem 'mysql2'
+  gem 'rspec-rails'
 end	
 
 group :test , :production do
   gem 'pg'
 end
 
+group :test do
+  gem 'rspec'
+end  	
 
 # Gems used only for assets and not required
 # in production environments by default.
