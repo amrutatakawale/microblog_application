@@ -7,6 +7,7 @@ gem 'rails', '3.2.19'
 
 
 gem 'therubyracer'
+gem 'capybara'
 
 group :development do 
   gem 'mysql2'
