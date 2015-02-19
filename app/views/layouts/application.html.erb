@@ -4,11 +4,31 @@
   <head>
 	<title><%= title %></title>
 	<%= csrf_meta_tag %>
+	<!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
 	<%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
     <%= stylesheet_link_tag 'blueprint/print', :media => 'print' %>
   </head>
   
   <body>
-    <%= yield %>
+    <div class="container">
+      <header>
+      	<%= image_tag("logo.png", :alt => "Microblog App") %>
+        <nav class="round">
+          <ul>
+          	<li><%= link_to "Home", "#" %></li>
+          	<li><%= link_to "Help", "#" %></li>
+          	<li><%= link_to "Sign in", "#" %></li>
+          </ul>	
+        </nav>
+      </header>
+
+      <section class="round">
+        <%= yield %>	
+      </section>
+      
+    </div>
   </body>
 </html>
