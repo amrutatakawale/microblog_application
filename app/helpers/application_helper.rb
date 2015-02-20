@@ -9,4 +9,10 @@ module ApplicationHelper
       "#{base_title} | #{@title}"	
   	end	
   end	
+
+  # Return to home page
+  def logo
+    image_tag("/images/logo.png", :alt => "Microblog App")
+  end	
+
 end
