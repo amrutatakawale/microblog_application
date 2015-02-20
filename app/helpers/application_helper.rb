@@ -12,7 +12,7 @@ module ApplicationHelper
 
   # Return to home page
   def logo
-    image_tag("/images/logo.png", :alt => "Microblog App")
+    image_tag("/assets/logo.png", :alt => "Microblog App")
   end	
 
 end
